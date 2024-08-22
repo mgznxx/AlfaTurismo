@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {         
+    background-image: linear-gradient(-225deg, #657497 0%, #87A7D9 50%, #DEF3F8 100%);
+}
+
+/*---------------------- Boton ir al menu ----------------------*/
+
+.container-btn {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-top-st {  
+    position: relative;
+    top: 0px;
+    left: 485px;
+    
+}
+
+.btn-top-tr {  
+    position: relative;
+    top: 0px;
+    left: 1120px;
+
+}
+
+.btn-top-ct {  
+    position: relative;
+    top: 0px;
+    left: 1000px;
+
+}
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+/*---------------- Hedear -----------------*/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    
+}
+
+.logo {
+    color: #d0c6da;
+    font-size: 0.9em;
+    text-decoration: none;
+    /* background: #9b7239; */
+    padding: 0 4px;     
+    font-weight: bold;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+    
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #d0c6da;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+
+header .navbar li a:hover {
+    color: #7c11bb;
+}
+
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 70px;
+
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.contenido .tituloBox h2 {
+    font-size: 4em;
+    color: #ece8ee;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.contenido .tituloBox h3 {
+    font-size: 3.5em;
+    color: #ece8ee;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+
+/* .contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1;
+    color: #f8f7f5;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+} */
+
+/* ------- imagenes Hero ------- */
+.contenido .imgBox img {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    padding-right: 0px;
+    /* padding-top: 10px; */
+    transform: rotate(5deg); /* Inclinación de 45 grados */
+    transform-origin: top right; /* Punto de origen de la rotación */
+}
+
+.contenido .imgBox2 img {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 5;
+    left: 890px;
+    top: 248px;
+    padding-right: 0px;
+    padding-top: 0px;
+    transform: rotate(5deg);
+    /*transform-origin: top right; Punto de origen de la rotación */
+}
+
+.contenido .imgBox3 img {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    border-radius:10px;
+    position: absolute;
+    z-index: 2;
+    left: 950px;
+    top: 110px;
+    padding-right: 0px;
+    transform: rotate(-5deg); /* Inclinación de 45 grados */
+    transform-origin: top left; /* Punto de origen de la rotación */
+}
+
+ /* .circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #bfb2c7;
+    clip-path: circle(750px at right 750px);
+    width: 100%;
+    height: 140%;
+} */
+
+
+/* Estilo general de la tarjeta */
+/* .card {
+    width: 300px;
+    border: 1px solid #ccc; */
+    /* padding: 20px;
+    margin: 20px auto; */
+    /* position: relative;
+    overflow: hidden; */
+    /*transform: rotate(10deg);  Inclinación de 45 grados 
+    transform-origin: top right;  Punto de origen de la rotación 
+}*/
+
+/* Estilo de la imagen */
+.card img {
+    width: 100%; 
+    /* transform: rotate(45deg); 
+    transform-origin: top right; Punto de origen de la rotación */
+}
+
+/* Estilo del contenido de la tarjeta */
+/* .card-content {
+    background-color: #f9f9f9;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}  */
+
+/* --------------- Quienes Somos ----------------- */
+
+.container-quienes {
+    position: relative;
+    background-color: rgb(241, 224, 208);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.text {
+    margin-left: 30px;
+}
+
+.text p {
+    flex: 2;
+    margin-right: 40px;
+    width: 40%;
+}
+
+.linea {
+    flex: 2;
+    margin-right: 40px;
+    width: 100%;
+}
+
+.text h1 {
+    margin-bottom: 40px;
+}
+
+.text li {
+    padding-right: 40px;
+    width: 40%;
+}
+
+.image img {
+    flex: 1;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 32%;
+    top: 145px;
+    left: 750px;
+    height: auto;
+    transform: rotate(-5deg);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.image2 img {
+    flex: 1;
+    position: absolute;
+    border-radius: 10px;
+    width: 32%;
+    top: 510px;
+    left: 750px;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.text h5 {
+    /* position: relative;
+    top: 140px; */
+    font-size: 20px;
+}
+
+
+
+/* :::::: Viajes :::::: */
+
+.viajes h2 {
+    font-size: 40px;
+}
+
+.swal-title-color {
+    color: #f53e3e; /* Cambia este valor al color deseado */
+}
+
+
+/* ::::::::::::::::: Formulario :::::::::::::: */
+
+form {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #9462d2;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: #9156c8;
+
+}
+
+h3 {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #ba7ff4;
+}
+
+
+
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: #622c4b;
+    padding-top: 10px;
+
+}
+
+.container p {
+    color: #f7f5f6;
+    font: bold;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* Estilos específicos para dispositivos móviles (puedes ajustar según tus necesidades) */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        padding-right: 0;
+    }
+
+    .contenido {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-top: 70px;
+    
+    }
+    
+    .contenido .tituloBox {
+        position: relative;
+        max-width: 600px;
+    }
+    
+    .contenido .tituloBox h2 {
+        font-size: calc(20px + 4vh);
+        color: #f3f0f5;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+    
+    .contenido .tituloBox h3 {
+        font-size: calc(14px + 4vh);
+        color: #efebf1;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+    
+    
+    .contenido .tituloBox p {
+        font-size: 1.8em;
+        line-height: 1;
+        color: #f8f7f5;
+        font-weight: 600;
+        margin-bottom: 20px;
+    
+    }
+
+
+    /* --------------- Quienes Somos ----------------- */
+
+.container-quienes {
+    position: relative;
+    background-color: rgb(241, 224, 208);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text p {
+    flex: 2;
+    margin-right: 40px;
+    width: 90%;
+}
+
+.text h1 {
+    margin-bottom: 40px;
+}
+
+.text li {
+    padding-right: 40px;
+    width: 90%;
+}
+
+      /* ---------------------- Footer ------------------ */
+
+      footer {
+        background-color: #622c4b;
+        padding-top: 10px;
+    
+    }
+    
+    .container p {
+        color: #f7f5f6;
+        font: bold;
+        
+    
+    }
+}
+
+/* :::::::::::::::::: Celu :::::::::::::::: */
+
+@media (max-width: 360px) {  
+    
+    .logo {
+        color: #d0c6da;
+        font-size: 0.8em;
+        text-decoration: none;
+        /* background: #9b7239; */
+        padding: 0 2px;     
+        font-weight: bold;
+    }
+    
+    .contenido {
+        
+        /* position: relative;*/
+        background-image: url(./img/playa.jpg);
+        background-repeat: no-repeat; 
+        background-size: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+        padding-left: 10px;
+        margin-top: 50px;
+    
+    }
+    
+    .contenido .tituloBox h2 {
+        position: absolute;
+        top: 30px;
+        font-size: 2.6em;
+        color: #f2eff4;
+        line-height: 1;
+        font-weight: bold;
+        text-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+        /* justify-content: center;
+        align-items: center; */
+    }
+    
+    .contenido .tituloBox h3 {
+        font-size: 1em;
+        color: #f2eff4;
+        line-height: 1;
+        font-weight: bold;
+        padding-top: 130px;
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+        justify-content: center;
+        align-items: center; 
+    } 
+    
+    /* --------------- Quienes Somos ----------------- */
+
+.container-quienes {
+    /* background-image: url(/img/cliente.jpg);
+        background-repeat: no-repeat; 
+        background-size: cover;
+    position: relative;
+    border-radius: 10px; */
+    width: 100%;
+    height: 370vh;
+    top:5px;
+    /* left: 10px; */
+    background-color: rgb(241, 224, 208);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+}
+
+.image img {
+    flex: 1;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 80%;
+    top: 100px;
+    left: 20px;
+    height: auto;
+    transform: rotate(-5deg);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.text h1 {
+    position: relative;
+    top: 10px;
+    color:#33448d
+}
+
+.text p {
+    position: relative;
+    top: 180px;
+    flex: 2;
+    z-index: 1;
+    padding: 10px;
+    margin-right: 40px;
+    width: 90%;
+}
+
+
+
+.text li {
+    position: relative;
+    top: 190px;
+    padding-right: 40px;
+    width: 90%;
+}
+
+.text h5 {
+    position: relative;
+    top: 100px;
+    font-size: 16px;
+    /* margin-bottom: 50px; */
+}
+
+/* -------- Viajes ------------ */
+.viajes h2 {
+    color:#33448d;
+    font-size: 40px;
+    /* margin-top: 150px; */
+    position: relative;
+    top: 28px;
+}
+
+.card {
+    position: relative;
+    top: 50px
+}
+    
+      /* ---------------------- Footer ------------------ */
+
+footer {
+    background-color: #622c4b;
+    padding-top: 10px;
+
+}
+
+.container p {
+    color: #f7f5f6;
+    font: bold;
+    
+
+}
+
+/* .foot-foot {
+    margin-top: 0px;
+    padding-top: 70px;
+}
+.copy {
+    position: relative;
+    top: 20px;
+}
+
+
+#section .foot {
+    background-color: #622c4b;
+    margin: 20px;
+}
+
+
+#section .foot {
+    width: 30%;
+    height: 30px;
+    padding: 0;
+    margin: 0%;
+
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+}
